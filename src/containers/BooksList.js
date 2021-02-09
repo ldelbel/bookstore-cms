@@ -1,23 +1,24 @@
 import React from 'react';
-// import Book from '../components/Book';
-const BooksList = () => (
-  <table>
-    <tr>
-      <th>Book ID</th>
-      <th>Title</th>
-      <th>Category</th>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>Book 1</td>
-      <td>Action</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Book 2</td>
-      <td>Horror</td>
-    </tr>
-  </table>
-);
+import { connect } from 'react-redux';
+import Book from '../components/Book';
+import mapBooksToProps from '../helpers/index';
 
-export default BooksList;
+const BooksList = props => {
+  const { books } = props;
+  return (
+    <table>
+      <tr>
+        <th>Book ID</th>
+        <th>Title</th>
+        <th>Category</th>
+      </tr>
+      {books.map(book => (
+        <Book key={`${book.title}`} book={book} />
+      ))}
+    </table>
+  );
+};
+
+
+
+export default connect(mapBooksToProps)(BooksList);
