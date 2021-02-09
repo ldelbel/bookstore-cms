@@ -1,12 +1,14 @@
 import React from 'react';
 import BooksList from '../containers/BooksList';
 import BooksForm from '../containers/BooksForm';
+import store from '../reducers/index';
+import { Provider } from 'react-redux';
 
 const App = () => (
-  <div>
+  <Provider store={store}>
     <BooksList />
     <BooksForm />
-  </div>
+  </Provider>
 );
 
 export default App;

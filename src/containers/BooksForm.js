@@ -1,5 +1,5 @@
 import React from 'react';
-import CATEGORIES from '../constants/index';
+import { CATEGORIES } from '../constants/index';
 
 const BooksForm = () => (
   <form>
