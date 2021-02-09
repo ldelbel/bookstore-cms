@@ -23,7 +23,7 @@ const BooksList = props => {
       </thead>
       <tbody>
         {books.map(book => (
-          <Book key={`${book.title}`} book={book} handleRemoveBook={handleRemoveBook} />
+          <Book key={`${book.title}-${book.id}`} book={book} handleRemoveBook={handleRemoveBook} />
         ))}
       </tbody>
     </table>

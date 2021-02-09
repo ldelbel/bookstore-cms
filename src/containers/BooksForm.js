@@ -31,7 +31,10 @@ const BooksForm = props => {
         value={title}
         type="text"
       />
-      <select onChange={e => handleChange(e.target)}>
+      <select onChange={e => handleChange(e.target)} defaultValue="defaultOption">
+        <option key="defaultOption" value="defaultOption" disabled>
+          Select Book Category
+        </option>
         {CATEGORIES.map(category => (
           <option key={`${category}`}>{category}</option>
         ))}
