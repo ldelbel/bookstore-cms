@@ -9,18 +9,25 @@ const CATEGORIES = [
 ];
 
 const INITIAL_STATE = {
-  books: [
-    {
-      id: 1,
-      title: 'Book1',
-      category: 'Action',
-    },
-    {
-      id: 2,
-      title: 'Book2',
-      category: 'Horror',
-    },
-  ],
+  booksReducer: {
+    books: [
+      {
+        id: 1,
+        title: 'Book1',
+        category: 'Action',
+      },
+      {
+        id: 2,
+        title: 'Book2',
+        category: 'Horror',
+      },
+      {
+        id: 3,
+        title: 'Book3',
+        category: 'Adventure',
+      },
+    ],
+  },
 };
 
 const CREATE_BOOK = 'CREATE_BOOK';

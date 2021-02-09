@@ -1,6 +1,6 @@
 import { CREATE_BOOK, REMOVE_BOOK } from '../constants/index';
 
-let bookID = 2;
+let bookID = 3;
 
 const createBook = book => ({
   type: CREATE_BOOK,

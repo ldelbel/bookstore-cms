@@ -6,17 +6,20 @@ import mapBooksToProps from '../helpers/index';
 
 const BooksList = props => {
   const { books } = props;
-  console.log(books);
   return (
     <table>
-      <tr>
-        <th>Book ID</th>
-        <th>Title</th>
-        <th>Category</th>
-      </tr>
-      {books.map(book => (
-        <Book key={`${book.title}`} book={book} />
-      ))}
+      <thead>
+        <tr>
+          <th>Book ID</th>
+          <th>Title</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        {books.map(book => (
+          <Book key={`${book.title}`} book={book} />
+        ))}
+      </tbody>
     </table>
   );
 };
