@@ -1,68 +1,116 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# Bookstore CMS
 
-## Available Scripts
+[![View Code](https://img.shields.io/badge/View%20-Code-green)]()
+[![Github Issues](https://img.shields.io/badge/GitHub-Issues-orange)]()
+[![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)]()
 
-In the project directory, you can run:
+<br />
+<p align="center">
+  <a href="https://github.com/ldelbel/bookstore-cms">
+    <img src="logo.png" alt="Logo" width="100">
+  </a>
 
-### `npm start`
+  <h2 align="center">Bookstore CMS</h2>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <h3 align="center">Platform for managing a Bookstore<h3>
+  <p align="center">
+    <a href="https://github.com/ldelbel/bookstore-cms"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    -
+    <a href="https://github.com/ldelbel/bookstore-cms/issues">Report Bug</a>
+    -
+    <a href="https://github.com/ldelbel/bookstore-cms/pulls">Request Feature</a>
+    -
+  </p>
+</p>
+    
+## Content
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<p align="center">
+  <a href="#about">About</a> •
+  <a href="#ins">Installing</a> •
+  <a href="#with">Built With</a> •
+  <a href="#tested">Tested With</a> •
+  <a href="#author">Author</a>
+</p>
 
-### `npm test`
+## About <a name = "about"></a>
+ 
+Simple calculator with UI to be used in the browser 
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![screenshot]() 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Live Demo Link <a name = "ldl"></a>
 
-### `npm run build`
+[Live Demo](https://bookstore-cms-123.herokuapp.com/)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🔧 Built with <a name = "with"></a>
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Javascript
+- ReactJS
+- Redux
+- npm
+- CSS
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠 Requirements <a name = "req"></a>
 
-### `npm run eject`
+You'll need a package manager to install the dependencies listed in package.json in order to make it work in your local machine.
+This project used NPM. The installation guide can be found [Here](https://www.npmjs.com/get-npm).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🔨 Setup and Installing <a name = "ins"></a>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To setup the project, run the following commands on terminal:
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+$ cd <folder> (the place you want to have the files installed)
+$ git clone https://github.com/ldelbel/bookstore-cms.git
+$ cd bookstore-cmsv
+$ npm install
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
 
-## Learn More
+This will install the dependencies in your local machine. This process can take a few minutes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🔨 Running the Game Locally
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+After installing the dependencies you can start your game running the code below
 
-### Code Splitting
+```
+$ npm start
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```
+If your default broswer doesn't open automatically, visit http://localhost/3000.
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## ✒️ Authors <a name = "author"></a>
 
-### Making a Progressive Web App
+### 👨‍💻 Khalil Hamdi
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+[![GitHub](https://img.shields.io/badge/-GitHub-000?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/khalilhamdii) <br>
+[![LINKEDIN](https://img.shields.io/badge/-LINKEDIN-0077B5?style=for-the-badge&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/khalilhamdi/) <br>
+[![EMAIL](https://img.shields.io/badge/-EMAIL-D14836?style=for-the-badge&logo=Mail.Ru&logoColor=white)](mailto:khaalil.hamdi@gmail.com) <br>
+[![TWITTER](https://img.shields.io/badge/-TWITTER-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/Khalilhamdiii)
 
-### Advanced Configuration
+### 👨‍💻 Lucas Delbel
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+[![GitHub](https://img.shields.io/badge/-GitHub-000?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/ldelbel) <br>
+[![LINKEDIN](https://img.shields.io/badge/-LINKEDIN-0077B5?style=for-the-badge&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/lucasdelbel/) <br>
+[![EMAIL](https://img.shields.io/badge/-EMAIL-D14836?style=for-the-badge&logo=Mail.Ru&logoColor=white)](mailto:lucdelbel@gmail.com) <br>
+[![TWITTER](https://img.shields.io/badge/-TWITTER-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/delbel_lucas)
 
-### Deployment
+## 🤝 Contributing
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Contributions, issues and feature requests are welcome!
 
-### `npm run build` fails to minify
+Feel free to check the [issues page]().
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## 👍 Show your support
+
+Give a ⭐️ if you like this project!
+
+## :clap: Acknowledgements
+
+- Microverse: [@microverse](https://www.microverse.org/)
+- React: [@react](https://reactjs.org/)
+
