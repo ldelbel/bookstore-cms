@@ -6,7 +6,7 @@ import { CATEGORIES } from '../constants/index';
 
 const BooksForm = props => {
   const [title, setTitle] = useState('');
-  const [category, setCategory] = useState('');
+  const [category, setCategory] = useState('defaultOption');
 
   const handleChange = target => {
     if (target.tagName === 'INPUT') {
@@ -23,6 +23,8 @@ const BooksForm = props => {
       category,
     };
     props.createBook(book);
+    setTitle('');
+    setCategory('defaultOption');
   };
   return (
     <form onSubmit={e => handleSubmit(e)}>
@@ -31,7 +33,7 @@ const BooksForm = props => {
         value={title}
         type="text"
       />
-      <select onChange={e => handleChange(e.target)} defaultValue="defaultOption">
+      <select onChange={e => handleChange(e.target)} defaultValue={category}>
         <option key="defaultOption" value="defaultOption" disabled>
           Select Book Category
         </option>
