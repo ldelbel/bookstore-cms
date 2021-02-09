@@ -1,34 +1,48 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { createBook } from '../actions/index';
 import { CATEGORIES } from '../constants/index';
 
-const BooksForm = () => {
-  const { title, setTitle } = useState('');
-  const { category, setCategory } = useState('');
+const BooksForm = props => {
+  const [title, setTitle] = useState('');
+  const [category, setCategory] = useState('');
 
-  const handleChange = (target) => {
+  const handleChange = target => {
     if (target.tagName === 'INPUT') {
       setTitle(target.value);
     } else if (target.tagName === 'SELECT') {
-      const text = target.options[target.selectedIndex].text;
+      const { text } = target.options[target.selectedIndex];
       setCategory(text);
     }
   };
-  const handleSubmit = () => {};
+  const handleSubmit = e => {
+    e.preventDefault();
+    const book = {
+      title,
+      category,
+    };
+    props.createBook(book);
+  };
   return (
-    <form>
+    <form onSubmit={e => handleSubmit(e)}>
       <input
-        onChange={(e) => handleChange(e.target)}
+        onChange={e => handleChange(e.target)}
         value={title}
         type="text"
       />
-      <select onChange={(e) => handleChange(e.target)}>
-        {CATEGORIES.map((category) => (
+      <select onChange={e => handleChange(e.target)}>
+        {CATEGORIES.map(category => (
           <option key={`${category}`}>{category}</option>
         ))}
       </select>
-      <input type="submit" />
+      <input type="submit" value="Submit" />
     </form>
   );
 };
 
-export default BooksForm;
+BooksForm.propTypes = {
+  createBook: PropTypes.func.isRequired,
+};
+
+export default connect(null, { createBook })(BooksForm);
