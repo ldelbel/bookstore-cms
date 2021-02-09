@@ -1,5 +1,4 @@
-const mapBooksToProps = state => {
-  console.log(state);
+const mapBooksToProps = (state) => {
   const { books } = state.booksReducer;
   return { books };
 };

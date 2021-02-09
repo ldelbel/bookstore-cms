@@ -5,7 +5,6 @@ const initialState = {
 };
 
 const booksReducer = (state = initialState, action) => {
-  console.log(state);
   switch (action.type) {
     case CREATE_BOOK:
       return {
@@ -16,7 +15,7 @@ const booksReducer = (state = initialState, action) => {
       const { id } = action.payload;
       return {
         ...state,
-        books: state.books.filter(book => book.id !== id),
+        books: state.books.filter((book) => book.id !== id),
       };
     }
     default:
