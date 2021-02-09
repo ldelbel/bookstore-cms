@@ -15,7 +15,7 @@ const booksReducer = (state = initialState, action) => {
       const { id } = action.payload;
       return {
         ...state,
-        books: state.books.filter((book) => book.id !== id),
+        books: state.books.filter(book => book.id !== id),
       };
     }
     default:

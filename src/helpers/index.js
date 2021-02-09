@@ -1,4 +1,4 @@
-const mapBooksToProps = (state) => {
+const mapBooksToProps = state => {
   const { books } = state.booksReducer;
   return { books };
 };
