@@ -37,9 +37,9 @@ const BooksForm = props => {
         <option key="defaultOption" value="defaultOption" disabled>
           Select Book Category
         </option>
-        {CATEGORIES.map(category => (
+        {CATEGORIES.map(category => (category !== 'All' ? (
           <option key={`${category}`}>{category}</option>
-        ))}
+        ) : null))}
       </select>
       <input type="submit" value="Submit" />
     </form>

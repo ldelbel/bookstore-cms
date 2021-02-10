@@ -1,7 +1,7 @@
 import { CHANGE_FILTER } from '../constants/index';
 
 const initialState = {
-  filter: 'ALL',
+  filter: 'All',
 };
 
 const filterReducer = (state = initialState, action) => {
