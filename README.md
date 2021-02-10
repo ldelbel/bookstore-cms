@@ -36,10 +36,10 @@
 </p>
 
 ## About <a name = "about"></a>
- 
+
 Bookstore Management App
- 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![screenshot]() 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![screenshot](./screenshot.png)
 
 ## Live Demo Link <a name = "ldl"></a>
 
@@ -80,8 +80,8 @@ After installing the dependencies you can start your game running the code below
 $ npm start
 
 ```
-If your default broswer doesn't open automatically, visit http://localhost/3000.
 
+If your default broswer doesn't open automatically, visit http://localhost/3000.
 
 ## ✒️ Authors <a name = "author"></a>
 
@@ -113,4 +113,3 @@ Give a ⭐️ if you like this project!
 
 - Microverse: [@microverse](https://www.microverse.org/)
 - React: [@react](https://reactjs.org/)
-
