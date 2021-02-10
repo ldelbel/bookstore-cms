@@ -6,8 +6,8 @@ import Navbar from './Navbar';
 const App = () => (
   <>
     <Navbar />
-    <BooksList />
     <BooksForm />
+    <BooksList />
   </>
 );
 
