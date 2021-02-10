@@ -1,5 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+const StyledLoader = styled.div`
+  border: 10px solid #0290ff;
+  border-radius: 50%;
+  border-top: 10px solid #f3f3f3;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-45deg);
+`;
 
 const Book = props => {
   const { book, handleRemoveBook } = props;
@@ -93,11 +103,14 @@ const Book = props => {
           </li>
         </ul>
       </div>
-      <div className="d-flex flex-column align-items-center justify-content-sm-center justify-content-lg-center align-items-lg-center col-md-3">
-        <span style={{ fontSize: '32px', color: '#121212' }}>64%</span>
-        <span style={{ fontSize: '14px', color: 'var(--gray)' }}>
-          Completed
-        </span>
+      <div className="d-flex align-items-center justify-content-sm-center justify-content-lg-center align-items-lg-center col-md-3">
+        <StyledLoader className="mr-4" />
+        <div className="d-flex flex-column">
+          <span style={{ fontSize: '32px', color: '#121212' }}>75%</span>
+          <span style={{ fontSize: '14px', color: 'var(--gray)' }}>
+            Completed
+          </span>
+        </div>
       </div>
       <div className="d-flex flex-column col-md-4">
         <span style={{ fontSize: '13px', color: 'var(--gray)' }}>
