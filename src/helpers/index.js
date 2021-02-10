@@ -1,7 +1,9 @@
 const mapBooksToProps = state => {
-  console.log(state.filterReducer.filter);
   const { books } = state.booksReducer;
-  return { books };
+  const { filter } = state.filterReducer;
+  return {
+    books: filter === 'All' ? books : books.filter(book => book.category === filter),
+  };
 };
 
 export default mapBooksToProps;
