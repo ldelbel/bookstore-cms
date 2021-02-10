@@ -26,8 +26,9 @@ const BooksForm = props => {
     setTitle('');
     setCategory('defaultOption');
   };
+
   return (
-    <div style={{ padding: '30px' }}>
+    <div style={{ padding: '30px', marginBottom: '20px' }}>
       <h1 style={{ fontSize: '20px', fontWeight: 'bold', color: 'var(--gray)' }}>ADD NEW BOOK</h1>
       <form
         className="d-md-flex d-lg-flex justify-content-between align-items-lg-center mt-3"

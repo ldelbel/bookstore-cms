@@ -57,8 +57,8 @@ const Book = props => {
                 borderStyle: 'solid',
                 borderColor: '#0290ff',
                 width: '75px',
+                border: 'none',
               }}
-              disabled
             >
               Edit
             </button>
@@ -85,6 +85,7 @@ const Book = props => {
                 borderStyle: 'solid',
                 borderColor: '#0290ff',
                 width: '75px',
+                border: 'none',
               }}
             >
               Remove
@@ -107,7 +108,6 @@ const Book = props => {
           className="btn btn-primary mt-4"
           type="button"
           style={{ background: '#0290ff', fontFamily: "'Roboto Slab', serif" }}
-          disabled
         >
           Update progress
         </button>
