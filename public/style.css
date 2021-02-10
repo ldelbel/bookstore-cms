@@ -1,0 +1,9 @@
+*:focus {
+  outline: none;
+}
+
+body {
+  background: var(--light);
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+}
