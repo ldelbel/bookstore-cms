@@ -65,7 +65,7 @@ To setup the project, run the following commands on terminal:
 ```
 $ cd <folder> (the place you want to have the files installed)
 $ git clone https://github.com/ldelbel/bookstore-cms.git
-$ cd bookstore-cmsv
+$ cd bookstore-cms
 $ npm install
 
 ```
