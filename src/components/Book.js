@@ -106,7 +106,7 @@ const Book = props => {
       <div className="d-flex align-items-center justify-content-sm-center justify-content-lg-center align-items-lg-center col-md-3">
         <StyledLoader className="mr-4" />
         <div className="d-flex flex-column">
-          <span style={{ fontSize: '32px', color: '#121212' }}>64%</span>
+          <span style={{ fontSize: '32px', color: '#121212' }}>75%</span>
           <span style={{ fontSize: '14px', color: 'var(--gray)' }}>
             Completed
           </span>
