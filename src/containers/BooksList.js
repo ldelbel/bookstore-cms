@@ -20,24 +20,14 @@ const BooksList = props => {
   return (
     <>
       <CategoryFilter handleChangeFilter={handleChangeFilter} />
-      <table>
-        <thead>
-          <tr>
-            <th>Book ID</th>
-            <th>Title</th>
-            <th>Category</th>
-          </tr>
-        </thead>
-        <tbody>
-          {books.map(book => (
-            <Book
-              key={`${book.title}-${book.id}`}
-              book={book}
-              handleRemoveBook={handleRemoveBook}
-            />
-          ))}
-        </tbody>
-      </table>
+
+      {books.map(book => (
+        <Book
+          key={`${book.title}-${book.id}`}
+          book={book}
+          handleRemoveBook={handleRemoveBook}
+        />
+      ))}
     </>
   );
 };
@@ -54,4 +44,6 @@ BooksList.propTypes = {
   changeFilter: PropTypes.func.isRequired,
 };
 
-export default connect(mapBooksToProps, { removeBook, changeFilter })(BooksList);
+export default connect(mapBooksToProps, { removeBook, changeFilter })(
+  BooksList,
+);
