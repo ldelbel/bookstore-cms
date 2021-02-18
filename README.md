@@ -72,7 +72,7 @@ $ npm install
 
 This will install the dependencies in your local machine. This process can take a few minutes.
 
-## 🔨 Running the Game Locally
+## 🔨 Running Locally
 
 After installing the dependencies you can start your game running the code below
 
